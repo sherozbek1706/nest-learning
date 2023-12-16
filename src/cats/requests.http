@@ -1,0 +1,9 @@
+### Create a new cat
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+  "name": "Foggy",
+  "age": 6,
+  "bress": "00"
+}

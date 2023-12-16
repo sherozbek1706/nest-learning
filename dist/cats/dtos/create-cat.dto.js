@@ -4,4 +4,4 @@ exports.CreateCatDto = void 0;
 class CreateCatDto {
 }
 exports.CreateCatDto = CreateCatDto;
-//# sourceMappingURL=createCat.dto.js.map
+//# sourceMappingURL=create-cat.dto.js.map
