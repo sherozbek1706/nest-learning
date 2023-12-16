@@ -1,0 +1,16 @@
+### Get all cats
+GET http://localhost:3000/
+
+### Create a new cat
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+  "name": "Pretty",
+  "color": "red",
+  "age":20
+}
+
+
+### Get id 
+GET http://localhost:3000/cats/45
