@@ -6,21 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppModule = void 0;
+exports.LoggerMiddleware = void 0;
 const common_1 = require("@nestjs/common");
-const cats_module_1 = require("./cats/cats.module");
-const logger_middleware_1 = require("./cats/middleware/logger.middleware");
-let AppModule = class AppModule {
-    configure(consumer) {
-        consumer
-            .apply(logger_middleware_1.LoggerMiddleware)
-            .forRoutes({ path: 'cats', method: common_1.RequestMethod.POST });
+let LoggerMiddleware = class LoggerMiddleware {
+    use(req, res, next) {
+        console.log(req.body);
+        next();
     }
 };
-exports.AppModule = AppModule;
-exports.AppModule = AppModule = __decorate([
-    (0, common_1.Module)({
-        imports: [cats_module_1.CatsModule],
-    })
-], AppModule);
-//# sourceMappingURL=app.module.js.map
+exports.LoggerMiddleware = LoggerMiddleware;
+exports.LoggerMiddleware = LoggerMiddleware = __decorate([
+    (0, common_1.Injectable)()
+], LoggerMiddleware);
+//# sourceMappingURL=logger.middleware.js.map

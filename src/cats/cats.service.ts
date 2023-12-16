@@ -4,8 +4,6 @@ import { Cat } from './interfaces/cat.interface';
 @Injectable()
 export class CatsService {
   create(body: Partial<Cat>) {
-    console.log(body);
-
     return body;
   }
 
