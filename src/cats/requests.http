@@ -5,5 +5,6 @@ Content-Type: application/json
 {
   "name": "Foggy",
   "age": 6,
-  "breed": "00"
+  "breed": "00",
+  "kokoa": "kochinasumnida"
 }
